@@ -1,0 +1,192 @@
+.
+├── etl_scripts/
+│   ├── (1) Helpers methods/
+│   │   └── helpers.py
+│   ├── (2) geo layers/
+│   │   ├── geo_gmd_update.py
+│   │   └── geo_plz6_update.py
+│   ├── (3) poi's layer/
+│   │   └── DFSEO/
+│   │       ├── google_maps_post_new.py
+│   │       ├── google_maps_get_new.py
+│   │       └── web_scraping.py
+│   └── (4) ISO-Schron/
+│       └── isochronen_berechnung.py
+├── Projects/
+│   ├── (1) Allianz/
+│   │   └── -allianz_konkurrenten_2025.sql/
+│   │       └── -compatitors API's retrieving Data/
+│   │           ├── -axa_winterthur.sql
+│   │           ├── -baloise.sql
+│   │           ├── -die_mobiliar.sql
+│   │           ├── -generali.sql
+│   │           ├── -helvetia.sql
+│   │           ├── -swisslife.sql
+│   │           ├── -vaudoise.sql
+│   │           ├── -versicherungsagentur.sql
+│   │           └── -zurich.sql
+│   ├── (2) AZ URL's untersuchen/
+│   │   ├── -collecting data and run some tests/
+│   │   │   ├── -az_corr_company_name.sql
+│   │   │   ├── -az_test_data_all_quelle.sql
+│   │   │   ├── -az_test_data_gmap.sql
+│   │   │   ├── -az_test_data_gorganic.sql
+│   │   │   ├── -az_test_data_moneyhouse.sql
+│   │   │   ├── -az_test_data_moneyhouse_v1.sql
+│   │   │   ├── -az_test_data_search_ch.sql
+│   │   │   └── -az_test_data_search_ch_v1.sql
+│   │   └── -Word to Word comparison/
+│   │       ├── -az_test_data_all_quelle.sql
+│   │       ├── -az_test_data_gmap.sql
+│   │       ├── -az_test_data_gorganic.sql
+│   │       ├── -az_test_data_moneyhouse.sql
+│   │       ├── -az_test_data_moneyhouse_v1.sql
+│   │       ├── -az_test_data_search_ch.sql
+│   │       └── -az_test_data_search_ch_v1.sql
+│   ├── (3) Top CC/
+│   │   ├── -topcc_google_data.sql
+│   │   └── -topcc_google_data_draft.sql
+│   ├── (4) Element-Küchen/
+│   │   ├── -element_küchen_old.sql
+│   │   └── -element_küchen_ganz_ch.sql
+│   ├── (5) Intervista/
+│   │   ├── -agg_intervista_frequenzdaten.sql
+│   │   ├── -Intervista_bern_I.sql
+│   │   ├── -intervista_Embrach.sql
+│   │   ├── -Intervista_schweiz.sql
+│   │   └── -Intervista_bern_II.sql
+│   └── (6) Tenz_Geoanalyse_Agglo_CH/
+│       ├── -lay_agglo_bern.sql
+│       ├── -lay_agglo_friburg.sql
+│       ├── -lay_agglo_geneve.sql
+│       ├── -lay_agglo_lausanne.sql
+│       ├── -lay_hkt100_lausanne.sql
+│       ├── -lay_agglo_luzern.sql
+│       ├── -lay_agglo_st_gallen.sql
+│       ├── -lay_agglo_wettingen.sql
+│       ├── -lay_hkt100_wettingen.sql
+│       ├── -lay_agglo_winterthur.sql 
+│       ├── -lay_agglo_zug.sql
+│       ├── -lay_agglo_ch.sql
+│       ├── -bildung.sql
+│       ├── -lay_bahnhof.sql
+│       ├── -lay_poi_attraktor.sql
+│       ├── -lay_str_freq.sql
+│       └── -tenz_standorte_ch.sql
+└── Geo Database/
+    ├── (1) POI's - Google maps Data /
+    │   ├── G-Abgleich/
+    │   │   ├── abgleich_bildung.sql
+    │   │   ├── abgleich_dienstleistung.sql
+    │   │   ├── abgleich_einkaufszentrum.sql
+    │   │   ├── abgleich_food.sql
+    │   │   ├── google_map_hotel_gastro_abgleich.sql
+    │   │   ├── hotel_gastro_abgleich.sql
+    │   │   └── mobilität.sql
+    │   ├── G-Allgemeine_Skripte/
+    │   │   ├── abgleich_skript.sql
+    │   │   ├── datenaufbereitung_für_matching.sql
+    │   │   ├── abgleich_poi_google.sql
+    │   │   ├── abgleich_poi_google_sp.sql
+    │   │   ├── VORLAGE_DATENAUFBEREITUNG.sql
+    │   │   └── VORLAGE_POI_AKTUALISIERUNG.sql
+    │   ├── G-Bau- und Montagegewerbe/
+    │   │   └── google_map_bau_montagegewerbe.sql
+    │   ├── G-Bildung/
+    │   │   ├── datenaufbereitung_bildung.sql
+    │   │   ├── google_map_bildung.sql
+    │   │   └── poi_aktualisierung_bildung.sql
+    │   ├── G-Business Events/
+    │   │   ├── datenaufbereitung_businessevents.sql
+    │   │   └── google_map_businessevents.sql
+    │   ├── G-Dienstleistung/
+    │   │   ├── datenaufbereitung_dienstleistung.sql
+    │   │   └── google_map_dienstleistung.sql
+    │   ├── G-Einkaufszentrum/
+    │   │   ├── datenaufbereitung_einkaufszentrum.sql
+    │   │   └── google_map_einkaufszentrum.sql
+    │   ├── G-Finanzdienstleistungen/
+    │   │   ├── google_map_finanzdienstleistungen.sql
+    │   │   └── poi_lieferung_banken.sql
+    │   ├── G-Food Geschäft/
+    │   │   ├── datenaufbereitung_food_sp.sql
+    │   │   ├── google_map_food_geschäft.sql
+    │   │   ├── google_map_food_geschäft_v1.sql
+    │   │   ├── poi_abgleich_google_food_tot_clean.sql
+    │   │   ├── poi_aktualisierung_food.sql
+    │   │   └── poi_lieferung_food.sql
+    │   ├── G-Freizeit/
+    │   │   ├── datenaufbereitung_freizeit.sql
+    │   │   ├── google_map_freizeit.sql
+    │   │   └── google_map_items_freizeit_all.sql
+    │   ├── G-Gesundheit/
+    │   │   ├── datenaufbereitung_gesundheit.sql
+    │   │   ├── google_map_gesundheit.sql
+    │   │   └── google_map_items_gesundheit_all.sql
+    │   ├── G-Hotel and Gastronomy/
+    │   │   ├── gastro_cham.sql
+    │   │   ├── google_map_hotel_gastronomie_all.sql
+    │   │   └── google_map_hotel_gastronomie_all_test.sql
+    │   ├── G-Kategorie_und_keyword/
+    │   │   ├── categories_business_data.sql
+    │   │   ├── google_map_category_hierarchy.sql
+    │   │   └── google_map_keyword.sql
+    │   ├── G-Landwirtschaft/
+    │   │   ├── datenaufbereitung_landwirtschaft.sql
+    │   │   └── google_map_landwirtschaft.sql
+    │   ├── G-Mobilität/
+    │   │   ├── datenaufbereitung_mobilitaet.sql
+    │   │   ├── google_map_items_mobilitaet_all.sql
+    │   │   ├── google_map_mobilität.sql
+    │   │   ├── google_map_mobilität_cleaning.sql
+    │   │   ├── google_map_mobilität_IV.sql
+    │   │   ├── google_map_mobilität_pII.sql
+    │   │   └── google_map_mobilität_pIII.sql
+    │   ├── G-Non-Food Geschäft/
+    │   │   ├── datenaufbereitung_non_food.sql
+    │   │   └── google_map_non-food_geschäft.sql
+    │   ├── G-Parkanlagen/
+    │   │   ├── datenaufbereitung_parkanlagen.sql
+    │   │   └── google_map_parkanlagen.sql
+    │   ├── G-POI Aktualisierung/
+    │   │   ├── poi_aktualisierung_banken.sql
+    │   │   ├── poi_aktualisierung_bildung.sql
+    │   │   ├── poi_aktualisierung_dienstleistung.sql
+    │   │   ├── poi_aktualisierung_einkaufszentrum.sql
+    │   │   ├── poi_aktualisierung_finanzdienstleistungen_ohne_banken.sql
+    │   │   ├── poi_aktualisierung_food.sql
+    │   │   ├── poi_aktualisierung_food_geschaefte_ohne_food.sql
+    │   │   ├── poi_aktualisierung_freizeit.sql
+    │   │   ├── poi_aktualisierung_gesundheit.sql
+    │   │   ├── poi_aktualisierung_hotel_gastro.sql
+    │   │   ├── poi_aktualisierung_mobilitaet.sql
+    │   │   ├── poi_aktualisierung_non_food.sql
+    │   │   ├── poi_aktualisierung_parkanlagen.sql
+    │   │   ├── poi_aktualisierung_religioese_einrichtung.sql
+    │   │   └── update_poi_typ_id_list.sql
+    │   ├── G-Postgres To Redshift/
+    │   │   ├── google_map_s3_to_redshift.sql
+    │   │   └── google_maps_to_s3.sql
+    │   ├── G-Religiöse_Einrichtung/
+    │   │   ├── datenaufbereitung_religioese_einrichtung.sql
+    │   │   └── google_map_religiöse_einrichtung.sql
+    │   └── G-Tables/
+    │       ├── google_map_metadata.sql
+    │       └── google_maps.sql
+    ├── (2) Gemeinde Layer/
+    │   ├── GMD_Aktualisieren_01_2024/
+    │   │   └── geo_gmd_update.sql
+    │   └── GMD_Aktualisieren_01_2025/
+    │       └── geo_gmd_update_01_2025.sql
+    ├── (3) PLZ Layer/
+    │   ├── PLZ6_Aktualisieren_2024/
+    │   │   └── plz6_gmd_update.sql
+    │   └── PLZ6_Kurrektur/
+    │       └── plz6_ort_korrektur.sql
+    ├── (4) HKT100 Layer/
+    │   ├── update_hkt100.sql
+    │   └── hkt100_entanonymisieren.sql
+    └── (5) Mapping Layer/
+        ├── gmd_plz6_mapping.sql
+        └── hkt_plz6_gmd.sql
+
