@@ -1,5 +1,5 @@
 .
-├── etl_scripts/
+├── python_scripts/
 │   ├── (1) Helpers methods/
 │   │   └── helpers.py
 │   ├── (2) geo layers/
